@@ -1,0 +1,60 @@
+/* BASIC RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+body{background:#f8fafc;color:#1e293b;animation:fadePage 0.6s ease;}
+html{scroll-behavior:smooth;}
+
+@keyframes fadePage{
+from{opacity:0;transform:translateY(10px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* NAVBAR */
+nav{
+position:fixed;top:0;width:100%;
+background:#fff;padding:15px 5%;
+display:flex;justify-content:space-between;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+z-index:1000;
+}
+nav a{text-decoration:none;margin:0 10px;color:#166534;font-weight:600}
+
+/* HERO */
+#home{
+height:100vh;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+background:linear-gradient(135deg,#166534,#1d4ed8);
+color:#fff;text-align:center;
+}
+.btn{
+padding:12px 25px;
+background:#22c55e;color:#fff;
+border:none;border-radius:25px;
+cursor:pointer;margin-top:20px;
+}
+
+/* SECTION */
+section{padding:100px 5%;}
+h2{margin-bottom:20px}
+
+/* CARD */
+.card{
+background:#fff;padding:20px;
+border-radius:12px;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+margin:10px 0;
+}
+
+/* QUIZ */
+.quiz-box{max-width:600px;margin:auto;}
+.option{
+padding:10px;border:1px solid #ccc;
+margin:10px 0;border-radius:10px;
+cursor:pointer;
+}
+.option:hover{background:#e2e8f0;}
+.btn-next{
+margin-top:10px;padding:10px 20px;
+background:#22c55e;color:#fff;border:none;
+border-radius:10px;cursor:pointer;
+}
